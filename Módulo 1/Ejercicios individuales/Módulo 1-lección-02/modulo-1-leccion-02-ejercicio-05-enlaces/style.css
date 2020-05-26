@@ -1,0 +1,72 @@
+/* NO TOCAR ESTOS ESTILOS */
+ul.news {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+  }
+  a {
+    color: red;
+  }
+  ul.news li.news__item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+  }
+  ul.news li.news__item + li.news__item {
+    border-top: 1px solid #ccc;
+  }
+  ul.news li.news__item:nth-child(2n) {
+    background: #eee;
+  }
+  ul.news li.news__item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  ul.news li.news__item h2.news__item-title {
+    margin: 0 0 .25em;
+    font-size: 20px;
+  }
+  ul.news li.news__item a.news__item-link {
+    color: green;
+  }
+  /* NO TOCAR ESTOS ESTILOS */
+  
+  /* Nuevos estilos a partir de esta línea */
+  /* Los enlaces son verdes porque tiene clases que son más específicos. Además está más abajo en el código */
+  
+  ul.news li.news__item a.news__item-link {
+    color: red;
+    
+  /* Ahora son rojos porque tiene la misma espicifidad pero está más abajo */
+    
+   /* Comentar el CSS que no se puede tocar y reescribirlo usando una clase por selector para que se vea igual. */
+    
+    div.news {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+  }
+  
+  div.news div.news__item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+  }
+  div.news div.news__item + div.news__item {
+    border-top: 1px solid #ccc;
+  }
+  div.news div.news__item:nth-child(2n) {
+    background: #eee;
+  }
+  div.news div.news__item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  div.news div.news__item h2.news__item-title {
+    margin: 0 0 .25em;
+    font-size: 20px;
+  }
+  div.news div.news__item div.news__item-link {
+    color: green;
+    
+    /* Como todo es div ya no se anidan y hay elementos que no se heredan */

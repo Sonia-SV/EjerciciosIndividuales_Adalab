@@ -1,0 +1,11 @@
+/* Si solo coloreamos la etiqueta links como decía el ejercicio. */
+.links
+{
+    color: red;
+}
+
+/* Esto es lo que hay que hacer para colorear los links. */
+a
+{
+    color: rgb(77, 2, 2);
+}
