@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Módulo 1, tema 4. Flexbox</h1>
+    <hr />
+    <section class="Ejercicio1">
+      <h2>Ejercicio 1. Flex y Flex direction</h2>
+      <ol>
+        <li>
+          Crear un contenedor flex de 500px por 500px y con 6 o más elementos.
+        </li>
+        <li>Hacer que se distribuyan en horizontal o vertical</li>
+        <li>Indicar cuál es el eje principal</li>
+      </ol>
+      <div class="ContenedorGrande1">
+        <div class="Contenedor1">
+          <div class="Hijos1">1</div>
+          <div class="Hijos1">2</div>
+          <div class="Hijos1">3</div>
+          <div class="Hijos1">4</div>
+          <div class="Hijos1">5</div>
+          <div class="Hijos1">6</div>
+        </div>
+        <div class="Contenedor2">
+          <div class="Hijos2">1</div>
+          <div class="Hijos2">2</div>
+          <div class="Hijos2">3</div>
+          <div class="Hijos2">4</div>
+          <div class="Hijos2">5</div>
+          <div class="Hijos2">6</div>
+        </div>
+      </div>
+      <p>
+        El eje principal en el primer caso es X (Row) y en el segundo es Y
+        (column)
+      </p>
+    </section>
+    <hr />
+    <section class="Ejercicio2">
+      <h2>Ejercicio 2. Flex wrap</h2>
+      <p>
+        Teniendo una lista de 10 a 15 imágenes de 200x100 px, hacer un bloque
+        flexbox donde las imágenes se distribuyan por el eje horizontal y se
+        vayan apilando uno detrás de otro.
+      </p>
+      <div class="ContenedorWrap">
+        <div class="HijosWrap">1</div>
+        <div class="HijosWrap">2</div>
+        <div class="HijosWrap">3</div>
+        <div class="HijosWrap">4</div>
+        <div class="HijosWrap">5</div>
+        <div class="HijosWrap">6</div>
+        <div class="HijosWrap">7</div>
+        <div class="HijosWrap">8</div>
+        <div class="HijosWrap">9</div>
+        <div class="HijosWrap">10</div>
+        <div class="HijosWrap">11</div>
+        <div class="HijosWrap">12</div>
+        <div class="HijosWrap">13</div>
+        <div class="HijosWrap">14</div>
+      </div>
+    </section>
+    <hr />
+    <section class="Ejercicio3">
+      <h2>Ejercicio3. Justify content y align items</h2>
+      <ol>
+        <li>
+          Hacer un menú horizontal con un contenedor flex de 100px de alto
+        </li>
+        <li>
+          Las opciones de menú serán:
+          <ul>
+            <li>Equipo</li>
+            <li>Proyectos</li>
+            <li>Equipo</li>
+            <li>Blog</li>
+            <li>Contacto</li>
+          </ul>
+        </li>
+        <li>
+          Hacer que se distribuyan horizontalmente ocupando todo el espacio
+          disponible, que la primera opción esté a 20px del borde izquierdo, y
+          la última esté a 20px del borde derecho
+        </li>
+        <li>
+          Todos los textos deben aparecer centrados verticalmente en el
+          contenedor de 100px
+        </li>
+        <li>
+          El espacio restante debe usarse para separar las opciones de menú,
+          unas de otras
+        </li>
+      </ol>
+      <div class="ContenedorMenu">
+        <div class="HijoMenu" class="home">
+          <a href="#home">Home</a>
+        </div>
+        <div class="HijoMenu" class="Proyectos">
+          <a href="#Proyectos">Proyectos</a>
+        </div>
+        <div class="HijoMenu" class="Equipo">
+          <a href="#Equipo">Equipo</a>
+        </div>
+        <div class="HijoMenu" class="Blog">
+          <a href="#Blog">Blog</a>
+        </div>
+        <div class="HijoMenu" class="#Contacto">
+          <a href="##Contacto">Contacto</a>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="Ejercicio5">
+      <h2>Ejercicio 5. Flex, grow, shringm y basis</h2>
+      <p>
+        Hacer una página con "header", "main" y "footer" y hacer que aunque haya
+        poco contenido el footer siempre está abajo de la página y el main ocupe
+        todo el espacio disponible. Si hubiese mucho contenido el footer debe
+        colocarse tras el main, de forma natural.
+      </p>
+      <cite
+        >Pista: Tendremos que apoyarnos en min-height y vh para realizar este
+        ejercicio.</cite
+      >
+    </section>
+    <hr />
+    <section class="Ejercicio6">
+      <h2>Ejercicio 6.</h2>
+      <p>
+        Convertir la imagen anterior a código usando HTML y CSS y lo que habéis
+        aprendido hoy de Flexbox. Los requisitos son los siguientes:
+      </p>
+      <ul>
+        <li>
+          Las medidas tienen que ser relativas, es decir, los elementos de la
+          página deben adaptarse al ancho de la ventana del navegador web. Si el
+          tamaño de la ventana aumenta, el tamaño de los elementos debe
+          aumentar.
+        </li>
+        <li>
+          El ancho del conjunto entero debe ser del 100% con un ancho máximo de
+          960px.
+        </li>
+        <li>
+          Cada bloque debe de crearse con una etiqueta HTML5 (header, footer,
+          aside...) y debe tener un título que esté centrado (como aparece en la
+          imágen). El bloque central (que sería un article), en vez de tener un
+          título, tendrá un párrafo con un texto aleatorio, podéis escribir
+          dentro de él lo que queráis.
+        </li>
+      </ul>
+    </section>
+    <hr />
+    <section class="Ejercicio7">
+      <h2>Ejercicio 7.</h2>
+      <p>
+        Convertir la imagen anterior a código usando HTML y CSS y lo que habéis
+        aprendido hoy de Flexbox. Los requisitos son los siguientes:
+      </p>
+      <ul>
+        <li>
+          En este caso si el tamaño de la ventana aumenta solo aumentará el
+          tamaño del bloque central, el bloque gris de la izquierda y el grupo
+          que compone la puntuación, texto y estrella de la derecha siempre
+          tendrán el mismo tamaño (ejemplo abajo).
+        </li>
+        <li>
+          El ancho del conjunto entero debe ser del 100% con un ancho máximo de
+          840px.<br />
+
+          Para el bloque gris de la izquierda debéis buscar una imagen cuadrada
+          y colocarla ahí.
+        </li>
+        <li>
+          No os preocupeis por el tamaño de cada elemento, lo importante es que
+          el resultado tenga una composición similar.
+        </li>
+        <li>
+          Para redondear los bordes debéis usar border-radius con unidades en
+          píxel (por ejemplo, border-radius: 5px).
+        </li>
+      </ul>
+    </section>
+    <hr />
+  </body>
+</html>

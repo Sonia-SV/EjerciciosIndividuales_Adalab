@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  block-size: border-box;
+  line-height: 1.5;
+}
+section {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+hr {
+  position: center;
+  width: 80%;
+  border: 1.5px solid rgba(75, 22, 75, 0.18);
+}
+h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+a {
+  color: grey;
+}
+
+a:hover {
+  color: purple;
+}
+.ContenedorGrande1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.Contenedor1 {
+  border: 1px solid grey;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Contenedor2 {
+  border: 1px solid grey;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Hijos1,
+.Hijos2 {
+  border: 1px solid purple;
+  background-color: rgba(163, 99, 158, 0.5);
+}
+
+.ContenedorWrap {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.HijosWrap {
+  border: 1px solid purple;
+  background-color: rgba(163, 99, 158, 0.5);
+  width: 200px;
+  height: 100px;
+}
+
+.ContenedorMenu {
+  border: 1px solid purple;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contenedorOrden {
+  display: flex;
+  flex-direction: row;
+  order: 1;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hijoOrden {
+  width: 50%;
+  order: 2;
+  flex-grow: 1;
+}
+/* 
+.hijoOrden5 {
+  order: 0;
+  flex-grow: 0;
+} */
+
+.articulo {
+  border: 1.2px solid purple;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.imagen {
+  background-image: url(https://placekitten.com/1000/500);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 0%;
+  opacity: 0.75;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* contenedor */
+.gatosNew {
+  margin-top: 50px;
+  background-color: rgba(180, 179, 179, 0.548);
+  display: flex;
+  width: 50vw;
+  height: 75vh;
+  flex-wrap: wrap;
+}
+
+/* contenido */
+.gatosTexto {
+  border: 1.2px solid purple;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: justify;
+  width: 50px;
+  height: 50px;
+}
+.gato1,
+.gato2,
+.gato3,
+.gato4 {
+  order: 21;
+}
+.gato5 {
+  order: 1;
+}
