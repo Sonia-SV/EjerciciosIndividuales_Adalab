@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rell="stylesheet" href="./stylesheets/reset.css" />
     <link rel="stylesheet" href="./stylesheets/main.css" />
     <title>Ejercicios 1.5</title>
   </head>
@@ -64,7 +65,7 @@
       </div>
     </section>
     <hr />
-    <section class="Ejercicio3">
+    <section id="Ejercicio3">
       <h2>Ejercicio 3. Vente conmigo</h2>
       <p>
         Crear un documento HTML con una cabecera y un contenedor principal con
@@ -86,6 +87,53 @@
         </li>
       </ol>
       <a href="ejercicio3.html">LINK AL EJERCICIO</a>
+    </section>
+    <hr />
+    <section id="Ejercicio5">
+      <h2>Ejercicio 5. Cajas sobre cajas</h2>
+      <p>
+        Vamos a definir un documento HTML con 3 cajas contenedoras div (div1,
+        div2 y div3):
+      </p>
+      <ul>
+        <li>
+          La primera con unas dimensiones de 500x500px y color de fondo
+          amarillo.
+        </li>
+        <li>
+          La segunda con dimensiones 300x300px y color de fondo verde.
+        </li>
+        <li>
+          La tercera con dimensiones 150x150px y color de fondo azul.
+        </li>
+      </ul>
+      <p>
+        Usando posicionamiento absoluto establecemos para el div2 y el div3 el
+        mismo origen que para el div1, de modo que las cajas se superpongan y el
+        efecto generado sea ver cuadrado azul sobre uno verde que a su vez está
+        sobre uno amarillo.
+      </p>
+      <p>
+        Ahora tenemos que hacer que las cajas estén centradas vertical y
+        horizontalmente añadiendo:
+      </p>
+      <ul>
+        <li>
+          40px de padding y 2px de borde al div1.
+        </li>
+        <li>
+          75px de padding al div2.
+        </li>
+        <li>
+          20px de borde de puntos al div3.
+        </li>
+      </ul>
+      <p>Para esto usad box-sizing: border-box;.</p>
+      <div>
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <div class="block3"></div>
+      </div>
     </section>
     <hr />
   </body>
