@@ -58,7 +58,6 @@ html {
 
 .header {
   background-color: var(--primary-color);
-
 }
 
 .header .wrapper {
@@ -88,7 +87,7 @@ html {
   list-style-type: none;
   padding: 0px;
   color: var(--light-color);
-  display:none;
+  display: none;
 }
 
 .header-menu li {
@@ -115,7 +114,7 @@ html {
 }
 @media all and (min-width: 768px) {
   .header-menu {
-  display:block;
+    display: block;
   }
   .header-mobile-button {
     display: none;
@@ -129,6 +128,4 @@ html {
 }
 
 @media all and (min-width: 1200px) {
- 
-  }
 }

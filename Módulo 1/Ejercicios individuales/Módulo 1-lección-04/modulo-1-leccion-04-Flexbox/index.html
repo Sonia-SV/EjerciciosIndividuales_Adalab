@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicios 1.4/Flexbox</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <h1>Módulo 1, tema 4. Flexbox</h1>
+    <!-- <h1>Módulo 1, tema 4. Flexbox</h1>
     <hr />
     <section class="Ejercicio1">
       <h2>Ejercicio 1. Flex y Flex direction</h2>
       <ol>
+
         <li>
           Crear un contenedor flex de 500px por 500px y con 6 o más elementos.
         </li>
@@ -116,8 +117,25 @@
       </div>
     </section>
     <hr />
-
-    <section class="Ejercicio5">
+    <section id="Ejercicio4">
+      <h2>Ejercicio 4. order</h2>
+      <ol>
+        <li>
+          Hacer un listado de noticias con imagen, título y párrafo de contenido
+        </li>
+        <li>
+          Meterlas en un contenedor flex y hacer que se distribuyan en dos
+          columnas
+        </li>
+        <li>
+          Elegir una noticia, por ejemplo, la última, y ponerla como destacada,
+          en primer lugar y ocupando las dos columnas
+        </li>
+      </ol>
+      <a href="ejercicio4.html">IR AL EJERCICIO</a>
+    </section>
+    <hr />
+    <section id="Ejercicio5">
       <h2>Ejercicio 5. Flex, grow, shringm y basis</h2>
       <p>
         Hacer una página con "header", "main" y "footer" y hacer que aunque haya
@@ -129,9 +147,11 @@
         >Pista: Tendremos que apoyarnos en min-height y vh para realizar este
         ejercicio.</cite
       >
+      <p><a href="ejercicio5.html">IR AL EJERCICIO</a></p>
     </section>
+
     <hr />
-    <section class="Ejercicio6">
+    <section>
       <h2>Ejercicio 6.</h2>
       <p>
         Convertir la imagen anterior a código usando HTML y CSS y lo que habéis
@@ -156,9 +176,28 @@
           dentro de él lo que queráis.
         </li>
       </ul>
+
+      <div class="Ejercicio6">
+        <header><h4>Header</h4></header>
+        <div class="central">
+          <aside><h5>Aside1</h5></aside>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vel
+              quas, ut officiis repudiandae autem dicta, ab eos aspernatur hic
+              iure nisi nam eius placeat culpa sapiente atque consectetur
+              dolorem!
+            </p>
+          </article>
+          <aside>
+            <h5>Aside2</h5>
+          </aside>
+        </div>
+        <footer><h4>Footer</h4></footer>
+      </div>
     </section>
     <hr />
-    <section class="Ejercicio7">
+    <section>-->
       <h2>Ejercicio 7.</h2>
       <p>
         Convertir la imagen anterior a código usando HTML y CSS y lo que habéis
@@ -186,7 +225,49 @@
           Para redondear los bordes debéis usar border-radius con unidades en
           píxel (por ejemplo, border-radius: 5px).
         </li>
-      </ul>
+      </ul> 
+
+      <div class="ejercicio7">
+        <div class="bloqueIzquierdo"></div>
+        <div class="bloqueCentral">
+          <div class="texto">
+            <p class="texto1">Centro de fisoterapia Guzmán Fernández</p>
+            <p class="texto2">Fisoterapia General</p>
+          </div>
+          <div class="botones">
+            <div class="cita"><a href="#">Reservar cita</a></div>
+            <div class="presupuesto"><a href="#">Pedir presupuesto</a></div>
+          </div>
+        </div>
+        <div class="bloqueDerecho">
+          <div class="filaSuperior">
+            <div class="valoraciones">
+            <p class="texto3">24 valoraciones</p>
+            <p class="texto4">Ver comentarios →</p>
+          </div>
+            <div class="puntuacion">8,9</div>
+          </div>
+          <div class="filaInferior" ><img src="./img/star.png" alt="Icono estrella"></div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="Ejercicio8">
+      <h2>Ejercicio 8.</h2>
+      <p>
+        Crear una página con un texto simple centrado que ocupe el 100% de la
+        pantalla hasta un máximo de 600 píxeles. Este texto deberá tener un
+        título, un autor y una fecha de creación organizado de la siguiente
+        forma.
+      </p>
+      <p>
+        Además deberá tener una cabecera con un fondo que ocupe toda la pantalla
+        y un contenido que ocupe el mismo ancho que el texto. A su vez, tendrá
+        que tener también un footer que se quede pegado en la parte inferior de
+        la página. Cuando haya poco texto se mantendrá ahí y cuando aparezca
+        mucho más texto se irá hacia abajo, siempre al final de la página.
+      </p>
+      <a href="ejercicio8.html">IR AL EJERCICIO</a>
     </section>
     <hr />
   </body>

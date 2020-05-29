@@ -1,0 +1,370 @@
+/* GENERALES */
+
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+body {
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  block-size: border-box;
+  line-height: 1.5;
+}
+section {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+hr {
+  position: center;
+  width: 80%;
+  border: 1.5px solid rgba(75, 22, 75, 0.18);
+}
+h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: purple;
+}
+
+/* EJERCICIO 1 */
+
+.ContenedorGrande1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.Contenedor1 {
+  border: 1px solid grey;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Contenedor2 {
+  border: 1px solid grey;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Hijos1,
+.Hijos2 {
+  border: 1px solid purple;
+  background-color: rgba(163, 99, 158, 0.5);
+}
+
+/* EJERCICIO 2 */
+
+.ContenedorWrap {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.HijosWrap {
+  border: 1px solid purple;
+  background-color: rgba(163, 99, 158, 0.5);
+  width: 200px;
+  height: 100px;
+}
+
+/* EJERCICIO 3 */
+
+.ContenedorMenu {
+  border: 1px solid purple;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* EJERCICIO 5 */
+
+.ejercicio5 {
+  margin: 0;
+}
+.ejercicio5 header {
+  padding: 10px 120px 10px 120px;
+  background-color: rgb(129, 77, 129);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ejercicio5 li {
+  display: inline-block;
+}
+.ejercicio5 a {
+  padding: 10px;
+}
+
+.ejercicio5 main {
+  margin-left: 120px;
+  margin-right: 120px;
+  text-align: justify;
+  min-height: 78.25vh;
+}
+
+.ejercicio5 footer {
+  padding: 10px 120px 10px 120px;
+  background-color: rgb(75, 6, 75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EJERCICIO 6 */
+
+.Ejercicio6 h4,
+.Ejercicio6 h5,
+.Ejercicio6 p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Ejercicio6 header {
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+}
+
+.Ejercicio6 article {
+  background-color: rgb(245, 206, 78);
+}
+
+.Ejercicio6 aside {
+  background-color: rgb(231, 116, 179);
+}
+
+.Ejercicio6 footer {
+  background-color: rgb(32, 238, 228);
+  display: flex;
+  justify-content: center;
+}
+
+.Ejercicio6 {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.central {
+  display: flex;
+  justify-content: center;
+}
+
+.central article {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 1% 5% 1% 5%;
+}
+
+.central aside {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+/* EJERCICIO 7 */
+
+.ejercicio7 {
+  max-width: 840px;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.filaInferior img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.bloqueIzquierdo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: rgb(197, 192, 192);
+  border-radius: 10px;
+}
+
+.bloqueCentral {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.bloqueCentral p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.botones {
+  display: flex;
+  font-size: 11px;
+}
+
+.bloqueDerecho {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.filaSuperior {
+  display: flex;
+}
+
+.valoraciones {
+  font-size: 8px;
+  margin-right: 4px;
+  margin-top: 4px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.texto3 {
+  font-weight: bold;
+}
+
+.texto1 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.texto2 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.cita {
+  background-color: rgb(197, 192, 192);
+  border-radius: 3px;
+  width: 120px;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.presupuesto {
+  background-color: white;
+  border: 1px solid rgb(197, 192, 192);
+  border-radius: 3px;
+  width: 120px;
+  color: rgb(197, 192, 192);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.valoraciones p {
+  margin: 0;
+}
+
+.puntuacion {
+  background-color: rgb(199, 199, 199);
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin: auto;
+  text-align: center;
+}
+
+/* EJERCICIO 8 */
+
+.ejercicio8 {
+  margin: 0;
+  width: 100%;
+}
+.ejercicio8 h1 {
+  margin: 0;
+}
+.ejercicio8 header {
+  background-color: rgb(0, 0, 0);
+}
+
+.textoHeader {
+  max-width: 600px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.ejercicio8 li {
+  display: inline-block;
+  padding-left: 10px;
+}
+.ejercicio8 a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgb(169, 169, 169);
+  margin-top: 30px;
+}
+.ejercicio8 main {
+  max-width: 600px;
+  margin-left: 120px;
+  margin-right: 120px;
+  min-height: 78.28vh;
+  margin: auto;
+}
+
+.ejercicio8 hr {
+  position: center;
+  width: 100%;
+  border: 0.5px solid rgba(121, 113, 121, 0.18);
+}
+
+.ejercicio8 footer {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

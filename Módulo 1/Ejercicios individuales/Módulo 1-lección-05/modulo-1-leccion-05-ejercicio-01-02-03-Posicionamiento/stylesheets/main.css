@@ -1,13 +1,16 @@
+/* GENERALES */
 * {
   box-sizing: border-box;
   color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 body {
   color: grey;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   block-size: border-box;
   line-height: 1.5;
+  margin: 2em;
 }
 
 hr {
@@ -20,13 +23,11 @@ h1 {
   margin: 40px;
 }
 
-a {
-  color: grey;
-}
-
 a:hover {
   color: purple;
 }
+
+/* EJERCICIO 1 */
 
 .lineasHorizontales li {
   display: inline-block;
@@ -37,6 +38,8 @@ a:hover {
 ol {
   list-style-type: lower-latin;
 }
+
+/* EJERCICIO 2 */
 
 .divPadre div {
   width: 300px;
@@ -66,12 +69,21 @@ ol {
   left: 180px;
 }
 
+/* EJERCICIO 3 */
+
 header.ejercicio3 {
   background-color: rgb(162, 60, 182);
+  opacity: 75%;
+  color: lightgray;
   padding: 20px;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main.ejercicio3 {
@@ -80,9 +92,9 @@ main.ejercicio3 {
   position: absolute;
   top: 100px;
 }
-body {
-  margin: 2em;
-}
+
+/* EJERCICIO 4 */
+
 .col {
   display: inline-block;
   width: 30%;
@@ -118,6 +130,9 @@ body {
 .box--4 {
   transform: rotate(60deg) scale(1.5) translate(0, 20px);
 }
+
+/* EJERCICIO 5 */
+
 .contenedorBloques {
   position: relative;
 }
@@ -149,6 +164,8 @@ body {
   top: 175px;
   left: 175px;
 }
+
+/* EJERCICIO 7 */
 
 header.ejercicio6 {
   background-color: rgb(151, 173, 202);
