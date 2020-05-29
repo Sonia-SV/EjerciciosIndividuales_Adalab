@@ -38,9 +38,6 @@ ol {
   list-style-type: lower-latin;
 }
 
-.divPadre {
-  background-color: rgb(196, 194, 194);
-}
 .divPadre div {
   width: 300px;
   height: 300px;
@@ -52,24 +49,19 @@ ol {
   background-color: rgb(45, 160, 141);
   position: relative;
   top: 100px;
-  right: 0;
-  bottom: 0;
   left: 100px;
 }
 
 .div2 {
   background-color: rgb(189, 41, 122);
   position: relative;
-  top: 0;
+
   right: 150px;
   bottom: 320px;
-  left: 0;
 }
 .div3 {
   background-color: rgb(184, 111, 51);
   position: relative;
-  top: 0;
-  right: 0;
   bottom: 240px;
   left: 180px;
 }
@@ -88,13 +80,54 @@ main.ejercicio3 {
   position: absolute;
   top: 100px;
 }
+body {
+  margin: 2em;
+}
+.col {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  border: 1px dotted deeppink;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+}
+.col__title {
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+.box {
+  background: cyan;
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+}
+
+.box--1 {
+  transform: translate(0, 20px);
+}
+
+.box--2 {
+  transform: scale(1.5);
+}
+
+.box--3 {
+  transform: rotate(60deg);
+}
+
+.box--4 {
+  transform: rotate(60deg) scale(1.5) translate(0, 20px);
+}
+.contenedorBloques {
+  position: relative;
+}
 
 .block1 {
   width: 500px;
   height: 500px;
   background-color: rgb(219, 204, 63);
   padding: 40px;
-  /* border: 2px solid black; */
+  border: 2px solid black;
 }
 
 .block2 {
@@ -102,12 +135,8 @@ main.ejercicio3 {
   height: 300px;
   background-color: rgb(37, 168, 118);
   position: absolute;
-  top: 250px;
-  bottom: 250px;
-  /* padding: 75px;
-   top: 250px; 
-  left: 250px; 
-  transform: translate(-50%, -50%)*/
+  top: 100px;
+  left: 100px;
 }
 
 .block3 {
@@ -115,9 +144,29 @@ main.ejercicio3 {
   height: 150px;
   justify-items: 150px;
   background-color: rgb(33, 82, 175);
-  /*border: 20px dotted;
-   position: absolute;
-  top: 250px;
-  left: 250px;
-transform: translate(-50%, -50%); */
+  border: 20px dotted;
+  position: absolute;
+  top: 175px;
+  left: 175px;
+}
+
+header.ejercicio6 {
+  background-color: rgb(151, 173, 202);
+  padding: 20px;
+}
+
+header.ejercicio6 p,
+header.ejercicio6 a {
+  color: whitesmoke;
+}
+
+.cookies {
+  height: 100px;
+  background-color: rgb(238, 238, 87);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
 }
