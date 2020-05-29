@@ -1,7 +1,8 @@
 .wrapper {
   margin: 20px;
   max-width: 1140px;
-  width: 100%;
+  /* width: 100%; ESTO ES LO QUE ESTÁBAMOS HACIENDO MAL*/
+  border: 1px solid red;
 }
 
 .wrapper h1 {
