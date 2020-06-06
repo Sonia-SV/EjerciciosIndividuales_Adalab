@@ -12,7 +12,7 @@
 
   & span {
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 0.3rem;
     color: $light-color;
     font-weight: 200;
@@ -35,7 +35,7 @@
 
   @include tablet {
     & span {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 
@@ -53,13 +53,19 @@
 
 .main__business {
   background-color: $light-color;
-  display: flex;
-  flex-direction: column;
+
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__text {
     text-align: center;
     line-height: 2.5rem;
-    margin: 3rem 5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 2rem;
     & h2 {
       font-size: 1.7rem;
     }
@@ -72,17 +78,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 5rem;
     text-align: center;
     line-height: 1.5rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    & h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
     & p {
-      margin: 1.5rem 1rem;
+      margin-left: 15vw;
+      margin-right: 15vw;
     }
     & a {
       padding: 0.2rem 0.5rem;
       & span {
         padding-left: 1rem;
         color: $main-color;
+      }
+    }
+  }
+
+  @include tablet {
+    & .wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__text {
+      flex-grow: 1;
+      margin-top: 5vh;
+    }
+    &__type {
+      width: 50%;
+      & p {
+        margin-left: 5vw;
+        margin-right: 5vw;
+      }
+    }
+  }
+  @include desktop {
+    &__type {
+      width: 33.33%;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      & p {
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

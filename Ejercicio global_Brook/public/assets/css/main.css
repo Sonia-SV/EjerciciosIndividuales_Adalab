@@ -331,7 +331,8 @@ html {
 .wrapper {
   max-width: 1280px;
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  border: 1px solid red; }
 
 .header {
   background-color: #15339b;
@@ -396,7 +397,7 @@ html {
   flex-direction: column; }
   .main__hero span {
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 0.3rem;
     color: #ffffff;
     font-weight: 200; }
@@ -410,7 +411,7 @@ html {
     align-items: center; }
   @media all and (min-width: 768px) {
     .main__hero span {
-      font-size: 5rem; } }
+      font-size: 4rem; } }
   @media all and (min-width: 1200px) {
     .main__hero {
       background-size: cover; }
@@ -421,13 +422,17 @@ html {
           margin-right: 0.2rem; } }
 
 .main__business {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column; }
+  background-color: #ffffff; }
+  .main__business .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .main__business__text {
     text-align: center;
     line-height: 2.5rem;
-    margin: 3rem 5rem; }
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 2rem; }
     .main__business__text h2 {
       font-size: 1.7rem; }
     .main__business__text h4 {
@@ -437,15 +442,43 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 5rem;
     text-align: center;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .main__business__type h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem; }
     .main__business__type p {
-      margin: 1.5rem 1rem; }
+      margin-left: 15vw;
+      margin-right: 15vw; }
     .main__business__type a {
       padding: 0.2rem 0.5rem; }
       .main__business__type a span {
         padding-left: 1rem;
         color: #15339b; }
+  @media all and (min-width: 768px) {
+    .main__business .wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .main__business__text {
+      flex-grow: 1;
+      margin-top: 5vh; }
+    .main__business__type {
+      width: 50%; }
+      .main__business__type p {
+        margin-left: 5vw;
+        margin-right: 5vw; } }
+  @media all and (min-width: 1200px) {
+    .main__business__type {
+      width: 33.33%;
+      margin-top: 10vh;
+      margin-bottom: 10vh; }
+      .main__business__type p {
+        margin-left: auto;
+        margin-right: auto; } }
 
 /*# sourceMappingURL=main.css.map */
