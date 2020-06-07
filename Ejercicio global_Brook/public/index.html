@@ -16,12 +16,12 @@
   </head>
   <body>
     
-    <header class="header">
+    <header class="header" >
         <a class="header__logo" href="#" title="Ir a la home de Brook">
-          <img src="./assets/images/brook-logo.png" alt="Brook logo" title="Logo de"/>
+          <img id="header" src="./assets/images/brook-logo.png" alt="Brook logo" title="Logo de"/>
         </a>
         <nav class="header__menu">
-          <a href="#" class="header_menu_button" title="Mostrar menú móvil"></a>
+          <div class="header__menu__button"><a href="#"  title="Mostrar menú móvil"></a></div>
           <ul class="header__menu__lista">
             <li>
               <a href="#" title="Ir a sección Home">Home</a>
@@ -44,7 +44,7 @@
     </header>
 
     <main class="main__">
-      <section class="main__hero">
+      <section class="main__hero" id="top">
         <h1><span>This is Brook</span></h1>
         <h2><span>A full-service</span> <span>creative agency.</span></h2>
       </section>
@@ -200,6 +200,9 @@
             </li>
           </ul>
           <p>© 2019 Brook. All Rights Reserved</p>
+        </div>
+        <div class="footer__top__button">
+          <a href="#top" title="Volver arriba">^</a>
         </div>
       </div>
     </footer>

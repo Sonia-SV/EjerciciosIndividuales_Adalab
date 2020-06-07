@@ -56,6 +56,10 @@
       margin: 0.5rem;
     }
   }
+  &__top__button {
+    display: none;
+  }
+
   @include tablet {
     &__menu {
       max-width: 80vw;
@@ -111,6 +115,26 @@
       }
       & p {
         margin-right: 5%;
+      }
+    }
+
+    &__top__button {
+      display: inline-block;
+      position: fixed;
+      bottom: 1.5vh;
+      right: 1.5vw;
+      & a {
+        color: $dark-color;
+        display: inline-block;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 3rem;
+        text-align: center;
+        background-color: $light-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
       }
     }
   }
