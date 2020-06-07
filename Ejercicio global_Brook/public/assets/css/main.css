@@ -352,10 +352,12 @@ html {
       width: 100%; }
   .header__menu__button {
     background-image: url("../images/menu-icon2.png");
+    background-color: 0;
     display: block;
     background-size: 100%;
-    width: 20px;
-    height: 20px; }
+    width: 30px;
+    height: 30px;
+    z-index: 4; }
   .header__menu__lista {
     display: none; }
   @media all and (min-width: 768px) {
@@ -382,7 +384,86 @@ html {
 
 .footer {
   background-color: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 0.8rem; }
+  .footer h4 {
+    font-size: 1rem;
+    padding-bottom: 1rem; }
+  .footer__menu {
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw; }
+    .footer__menu__logo {
+      display: inline-block;
+      box-sizing: content-box;
+      width: 150px;
+      padding: 1.5rem 0; }
+      .footer__menu__logo img {
+        width: 100%; }
+    .footer__menu__options {
+      padding: 1.5rem 0;
+      display: none; }
+    .footer__menu__direction {
+      padding: 1.5rem 0; }
+      .footer__menu__direction__socialmedia {
+        display: flex; }
+        .footer__menu__direction__socialmedia li {
+          display: inline-block;
+          padding: 0.5rem;
+          margin-top: 1rem; }
+  .footer__bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem; }
+    .footer__bottom li {
+      display: inline-block; }
+      .footer__bottom li a {
+        padding: 0.5rem; }
+    .footer__bottom p {
+      padding: 0.5rem;
+      margin: 0.5rem; }
+  @media all and (min-width: 768px) {
+    .footer__menu {
+      max-width: 80vw;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between; }
+      .footer__menu__logo {
+        margin-right: 25vw; }
+      .footer__menu__options {
+        display: block;
+        margin-right: 25vw; }
+      .footer__menu__direction {
+        margin-right: 25vw; }
+    .footer__bottom {
+      display: none; } }
+  @media all and (min-width: 1200px) {
+    .footer__menu {
+      max-width: 100%;
+      flex-wrap: no-wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 0; }
+      .footer__menu__logo {
+        margin-left: 5%;
+        margin-right: 50%; }
+      .footer__menu__options {
+        margin-right: auto; }
+      .footer__menu__direction {
+        margin-right: 5%; }
+    .footer__bottom {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .footer__bottom ul {
+        margin-left: 5%; }
+      .footer__bottom p {
+        margin-right: 5%; } }
 
 .main__hero {
   height: 100vh;

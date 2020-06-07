@@ -20,10 +20,12 @@
   }
   &__menu__button {
     background-image: url("../images/menu-icon2.png");
+    background-color: red($color: #000000);
     display: block;
     background-size: 100%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    z-index: 4;
   }
 
   &__menu__lista {
