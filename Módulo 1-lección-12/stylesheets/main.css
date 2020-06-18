@@ -1,0 +1,63 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.item1 {
+  background-color: pink;
+  grid-column: span 12;
+  height: 20vh;
+}
+
+.item2 {
+  background-color: purple;
+  grid-column: span 4;
+  height: 60vh;
+}
+
+.item3 {
+  background-color: coral;
+  grid-column: span 8;
+}
+
+.item4 {
+  background-color: skyblue;
+  grid-column: span 12;
+  height: 20vh;
+}
+h3 {
+  margin-top: 50px;
+}
+
+.header {
+  background-color: pink;
+  height: 20vh;
+}
+
+.hero {
+  display: none;
+}
+
+.menu {
+  background-color: purple;
+  height: 60vh;
+}
+
+.content {
+  background-color: coral;
+}
+
+.footer {
+  background-color: skyblue;
+  height: 20vh;
+}
+
+.e6 .fila {
+  border: white solid 5px;
+  background-color: cyan;
+  height: 50px;
+  gap: 2px;
+}
